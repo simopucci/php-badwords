@@ -10,6 +10,19 @@
 
 </head>
 <body>
-    
+    <form class="container my-5" action="./result.php" method="GET">
+
+        <div class="mb-3">
+            <label for="censored-word" class="form-label">Scrivi la parola da censurare</label>
+            <input type="text" class="form-control" name="censored-word" placeholder="Parola da censurare">
+        </div>
+        <div class="mb-3">
+            <label for="user-input" class="form-label">Scrivi qui la tua frase</label>
+            <input class="form-control" name="user-input"></input>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Invia</button>
+
+    </form>
 </body>
 </html>
