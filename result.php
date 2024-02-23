@@ -13,8 +13,6 @@
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -33,14 +31,17 @@
     
     <div class="container mt-5">
 
-        <h2 class="fw-bold my-4">
-            <?= $censored_sentence ?>
+        <h2 class="fw-bold my-4 text-danger">
+            <?php echo $censored_sentence ?>
         </h2>
 
+        <?php
+            echo 'La frase originale è: ', var_dump($sentence);
+        ?> 
+            
         <div                                                        >
             <?php 
-                echo "La parola censurata è: {$word}. <br>                
-                La frase originale è: {$sentence}"
+                echo "La parola censurata è: ", var_dump($word);
             ?>
         </div>
 
